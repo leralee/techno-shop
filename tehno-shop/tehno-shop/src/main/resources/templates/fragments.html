@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="page_head(title, remove)" th:remove="${remove}">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0, minimum-scale=1.0">
+
+    <title>[[${title}]]</title>
+
+
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/style_navigation.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}"/>
+    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>
+    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common.js}"></script>
+    <script type="text/javascript" th:src="@{/js/common_form.js}"></script>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+
+<!--    &lt;!&ndash; Bootstrap CSS CDN &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+<!--    &lt;!&ndash; Our Custom CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="style2.css">-->
+<!--    &lt;!&ndash; Scrollbar Custom CSS &ndash;&gt;-->
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">-->
+</head>
+<body>
+
+    <th th:fragment="column_link(moduleURL, fieldName, columnLabel)" th:remove="${removeTag}">
+        <a class="text-violet-ondark"
+           th:href="@{${moduleURL} + '/page/' + ${currentPage} + '?sortField=' + ${fieldName} +'&sortDir=' + ${sortField != fieldName ? sortDi : reverseSortDir} + ${keyword != null ? '&keyword=' + keyword : ''}}">
+            [[${columnLabel}]]
+        </a>
+
+        <span th:if="${sortField==fieldName}"
+              th:class="${sortDir == 'asc'} ? 'fas fa-sort-up' : 'fas fa-sort-down'"></span>
+    </th>
+
+    <a th:fragment="page_link(pageNum, label)"
+       class="page-link"
+       th:href="@{'/users/page/' + ${pageNum} + '?sortField=' + ${sortField} + '&sortDir=' + ${sortDir} + ${keyword != null ? '&keyword=' + keyword : ''}}">[[${label}]]</a>
+
+    <div th:fragment="category_actions" th:remove="tag">
+        <a class="btn btn-violet" th:href="@{'/categories/edit/' + ${cat.id}}">Редактировать</a>
+        &nbsp;
+        <a class="btn btn-coral link-delete"
+           th:href="@{'/categories/delete/' + ${cat.id}}"
+           th:entityId="${cat.id}">Удалить</a>
+
+    </div>
+
+
+</body>
+</html>

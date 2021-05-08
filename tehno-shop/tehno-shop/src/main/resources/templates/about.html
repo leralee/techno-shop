@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="fragments :: page_head('Главная страница', 'none')"></head>
+<link rel="stylesheet" type="text/css" th:href="@{/about.css}"/>
+
+
+<body>
+
+
+<!--    <div class="container-fluid">-->
+
+<div th:replace="navigation :: menu"></div>
+
+<div class="main-content">
+    <main>
+        <div class="about-img">
+            <img src="images/me.jpg">
+        </div>
+
+        <div class="about-text">
+            <h2>Контакты</h2>
+            <h3>Почта: lerakenobi@cube.com</h3>
+            <h3>Telegram: lera8lee</h3>
+        </div>
+
+        
+    </main>
+</div>
+
+
+
+
+
+
+<!--&lt;!&ndash; jQuery CDN &ndash;&gt;-->
+<!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>-->
+<!--&lt;!&ndash; Bootstrap Js CDN &ndash;&gt;-->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+<!--&lt;!&ndash; jQuery Custom Scroller CDN &ndash;&gt;-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>-->
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+/*.about-img{*/
+/*    width: 50%;*/
+/*}*/
+
+.about-text{
+    margin-left: 450px;
+    margin-top: -450px;
+}
+
+.about-text h3{
+    color: #222;
+    font-size: 1.7rem;
+}
+

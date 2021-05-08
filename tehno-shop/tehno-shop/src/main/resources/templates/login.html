@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<!--    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width; initial-scale=1.0, minimum-scale=1.0">-->
+
+    <title>Авторизация</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/fontawesome/all.css}"/>
+
+
+<!--    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}"/>-->
+<!--    <link rel="stylesheet" type="text/css" href="/webjars/bootstrap/css/bootstrap.min.css"/>-->
+<!--    <script type="text/javascript" th:src="@{/webjars/jquery/jquery.min.js}"></script>-->
+<!--    <script type="text/javascript" th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>-->
+    <link rel="stylesheet" type="text/css" th:href="@{/style_for_login.css}"/>
+
+
+<!--    в главной странице мы почему то не можем ссылать на фрагмент и должны прописывать отдельно. Вопрос???-->
+</head>
+<body>
+
+    <div class="center">
+        <h1><span class="fas fa-dice-d6"></span>&nbsp;Accusoft</h1>
+
+        <form th:action="@{/login}" method="POST">
+            <div th:if="${param.error}">
+                <p class="text-danger">Неверный логин или пароль</p>
+            </div>
+
+
+            <div class="txt_field">
+                <input type="text" name="username" required>
+                <span></span>
+                <label>Логин</label>
+            </div>
+
+            <div class="txt_field">
+                <input type="password" name="password" required>
+                <span></span>
+                <label>Пароль</label>
+            </div>
+            <input type="submit" value="Login">
+<!--                <div>-->
+<!--                    <p>Вход</p>-->
+<!--                </div>-->
+<!--                <p>-->
+<!--                    <input type="text" name="username" class="form-control" placeholder="Username" required>-->
+<!--                </p>-->
+
+<!--                <p>-->
+<!--                    <input type="password" name="password" class="form-control" placeholder="Password">-->
+<!--                </p>-->
+
+<!--                <p>-->
+<!--                    <input type="submit" value="Вход" class="btn btn-primary">-->
+<!--                </p>-->
+
+
+
+
+
+        </form>
+
+    </div>
+
+</body>
+</html>

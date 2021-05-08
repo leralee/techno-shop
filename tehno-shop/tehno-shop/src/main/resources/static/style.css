@@ -1,0 +1,145 @@
+
+/*.violet-background {background-color: #7386D5}*/
+/*.white {color: white}*/
+
+.btn-violet{background-color:#DD2F6E;color: white;}
+.btn-violet:hover{color: white;}
+.btn-coral{background-color: #F26065; color: white;}
+.btn-coral:hover{color: white;}
+
+.text-violet{
+    color: #DD2F6E;
+    background: #f1f5f9;}
+.text-violet:hover{
+    color: red;
+    background: #f1f5f9;
+}
+
+
+.nav-link{
+    color: #DD2F6E;
+}
+.nav-link:hover{
+    color: #DD2F6E; !important;
+    background-color: #f1f5f9; !important;
+    border: #adadad;
+}
+
+
+
+
+
+
+.text-violet-ondark {
+    color: #DD2F6E;
+    background-color: #E9ECEF;
+}
+
+.text-violet-ondark:hover {
+    color: #DD1F0E;
+    background-color: #E9ECEF;
+}
+
+.text-violet-onlight {
+    color: #DD2F6E;
+    background-color: #FFFFFF;
+}
+
+.text-violet-onlight:hover {
+    color: #DD1F0E;
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+.text-violet {
+    color: #DD2F6E;
+    background: #f1f5f9;
+}
+
+.icon-violet{
+    color: #DD2F6E;
+    background-color: #f1f5f9; !important;
+}
+
+.icon-violet:hover{
+    color: red;
+    background-color: #f1f5f9; !important;
+}
+.icon-coral {
+    color: #F26065;
+}
+.icon-green {
+    color: mediumseagreen;
+}
+
+.icon-grey {
+    color: grey;
+}
+
+
+
+
+
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #DD2F6E;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+    background-color: red;
+}
+
+/*.page-link {*/
+/*    color: #DD2F6E;*/
+/*}*/
+
+/*.page-link:hover {*/
+/*    color: #DD2F6E;*/
+/*}*/
+
+/*.page-link{*/
+/*    color: #DD2F6E;*/
+/*}*/
+
+.pagination > li > a
+{
+    background-color: white;
+    color: #DD2F6E;
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: #5a5a5a;
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: #DD2F6E !Important;
+    border: solid 1px #DD2F6E !Important;
+}
+
+.pagination > .active > a:hover
+{
+    background-color: #DD2F6E !Important;
+    border: solid 1px #DD2F6E;
+}
+
+
+
+
+
+
+

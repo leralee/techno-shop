@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head th:replace="fragments :: page_head('Главная страница', 'none')"></head>
+
+
+
+
+<body>
+
+
+<!--    <div class="container-fluid">-->
+
+<div th:replace="navigation :: menu"></div>
+
+
+<!--        <div>-->
+<!--            <h2>Добро пожаловать</h2>-->
+<!--            <a th:href="@{/account}"-->
+<!--               sec:authentication="principal.fullName"></a>-->
+<!--            <span sec:authentication="principal.authorities"></span>-->
+<!--        </div>-->
+<!--    </div>-->
+
+
+<!--     Page Content Holder-->
+<!--    <div id="content">-->
+<!--         <div>-->
+<!--            <h2>Добро пожаловать</h2>-->
+<!--            <a th:href="@{/account}"-->
+<!--               sec:authentication="principal.fullName"></a>-->
+<!--            <span sec:authentication="principal.authorities"></span>-->
+<!--         </div>-->
+
+<!--        <h1>[[${productCount}]]</h1>-->
+<!--    </div>-->
+<!--<main>fklnesfnesifvnesdvfsfvffffffffffffffffffffffffffffffffffffffffffffffffffsefsfsfsf</main>-->
+
+
+
+
+<div class="main-content">
+            <main>
+
+                <div class="cards">
+                    <div class="card-single">
+                        <div>
+                            <h1>[[${productCount}]]</h1>
+                            <span>Продукты</span>
+                            <a th:href="@{/products/new}" class="text-violet-onlight">Добавить</a>
+                        </div>
+                        <div>
+                            <span class="las la-users"></span>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <div>
+                            <h1>[[${categoryCount}]]</h1>
+                            <span>Категория</span>
+                            <a th:href="@{/categories/new}" class="text-violet-onlight">Добавить</a>
+                        </div>
+                        <div>
+                            <span class="las la-shopping-cart"></span>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <div>
+                            <h1>[[${brandCount}]]</h1>
+                            <span>Бренд</span>
+                            <br>
+                            <a th:href="@{/brands/new}" class="text-violet-onlight">Добавить</a>
+                        </div>
+                        <div>
+                            <span class="las la-tag"></span>
+                        </div>
+                    </div>
+
+                    <div class="card-single">
+                        <div>
+                            <h1>[[${userCount}]]</h1>
+                            <span>Пользователи</span>
+                            <a th:href="@{/users/new}" class="text-violet-onlight">Добавить</a>
+                        </div>
+                        <div>
+                            <span class="las la-cubes"></span>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </main>
+        </div>
+
+
+
+
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<!-- Bootstrap Js CDN -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- jQuery Custom Scroller CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+
+
+
+</body>
+</html>
